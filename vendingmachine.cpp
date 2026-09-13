@@ -2,10 +2,11 @@
 #include <iostream>
 
 // Definition of VendingMachine constructor.
-VendingMachine::VendingMachine()
-    : sodaTypes_{} // Initialization of sodaTypes_ vector. Explicit call to the constructor.
+VendingMachine::VendingMachine(const std::string& ownerName)
+    : owner_{ownerName}
+    , sodaTypes_{} // Initialization of sodaTypes_ vector. Explicit call to the constructor.
 {
-    std::cout << "Vending machine object constructed!" << std::endl;
+    std::cout << "Eier:" << owner_ << std::endl;
 }
 
 // Will be called when the object is deleted. Could do clean-up tasks here.

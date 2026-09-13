@@ -14,7 +14,7 @@ int main()
     // TODO
 
     // Create vendingMachine object. Constructor will be called with no parameters.
-    VendingMachine vendingMachine{};
+    VendingMachine vendingMachine{"Vegard"};
     // Print inventory using public printInventory member function (method).
     vendingMachine.printInventory();
 

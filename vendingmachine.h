@@ -6,13 +6,14 @@
 
 #include "soda.h"
 #include <vector>
+#include <string>
 
 // Declare class VendingMachine
 class VendingMachine
 {
 public:
     // Constructor.
-    VendingMachine();
+    VendingMachine(const std::string& ownerName); // Setter inn ownerName
 
     // Destructor.
     ~VendingMachine();
@@ -29,6 +30,7 @@ private:
     // good idea due to reserved names starting with __ and because auto completion of names
     // will work more smoothly.
     std::vector<Soda> sodaTypes_;
+    std::string owner_;
 };
 
 // End of include guard ("redefinition protection").
